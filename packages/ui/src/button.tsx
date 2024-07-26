@@ -8,13 +8,11 @@ interface ButtonProps {
   appName: string;
 }
 
-export const Button = ({ children, className, appName }: ButtonProps) => {
+export const Button = ({ children, appName }: ButtonProps) => {
   return (
     <button
-      className={className}
-      onClick={() => alert(`Hello from your ${appName} app!`)}
-    >
-      {children}
+      className="w-auto h-auto border-2 p-1 border-black rounded-md" 
+     >Click me
     </button>
   );
 };
